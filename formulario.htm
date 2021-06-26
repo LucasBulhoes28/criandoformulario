@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Blockchain!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contrato de locação de imóvel</h1>
+    </header>
+      <form action="#" target="_self" method="POST" name="frmImovel" id="frmImovel">
+        <label for="paramLocator">Locador (end. EHT): </label>
+        <input type="text" name="paramLocator" id="paramLocator" size="45" maxlength="42" required autofocus />
+        <br />
+        <label for="paramRenter">Locatário (end. EHT): </label>
+        <input type="text" name="paramRenter" id="paramRenter" size="45" maxlength="42" required />
+        <br />
+        <label for="paramAddressHome">Endereço do imóvel: </label>
+        <input type="text" name="paramAddressHome" id="paramAddressHome" size="100" required placeholder="(informe a rua com o CEP do imóvel)" />
+        <br />
+        <label for="paramRentalValue">Valor do aluguel: </label>
+        <input type="number" name="paramRentalValue" id="paramRentalValue" size="10" min="1" max="99999" required />
+        <br />
+	<div>
+        Observações:
+        <input type="text" name="contractObsr" id="contractObs" size="100" min="1" max="99999" required placeholder="Opcional" />
+        <button>Buscar Dados</button>
+      	</div>
+        <input type="submit" value="Registrar no Blockchain" onclick="obterDadosForm();" />
+      </form>
+    <hr />
+   <h6>Ao clicar no botão "registrar", você concorda com a nossa Política de Privacidade e com os nossos Termos de Uso do site</h6>
+  </body>
+</html>
