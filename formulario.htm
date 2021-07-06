@@ -8,7 +8,7 @@
   </head>
 	<style>
 	body {
- 	 background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+ 	 background-image: url('https://images.unsplash.com/photo-1608726025971-d7e9df684498?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJvb2tzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
  	 background-repeat: no-repeat;
  	 background-attachment: fixed;  
  	 background-size: cover;
@@ -23,7 +23,7 @@
         <input type="text" name="addTitulo" id="addTitulo" size="30" maxlength="30" required autofocus placeholder="p. ex. Ensaio sobre a Cegueira" />
         <br />
         <br />
-        <label for="addAutor"; style="color:Cornsilk;"><strong>Autor:<strong></label>
+        <label for="addAutor"; style="color:Cornsilk;"><strong>Autor(a):<strong></label>
         <input type="text" name="addAutor" id="addAutor" size="30" maxlength="30" required placeholder="p. ex. José Saramago" />
         <br />
         <br />
@@ -59,16 +59,19 @@
         <button onclick="getRentalContractData()">Buscar Dados</button>
       </div>
       <br />
-      <div><label style="color:Cornsilk;">Endereço Ethereum do locador do imóvel: <span id="locator"></span></div>
+      <div><label style="color:Cornsilk;">Título: <span id="locator"></span></div>
       <br />
       <br />
-      <div>Endereço Ethereum do locatário do imóvel: <span id="renter"></span></div>
+      <div><label style="color:Cornsilk;">Autor(a): <span id="renter"></span></div>
       <br />
       <br />
-      <div>Endereço físico do imóvel: <span id="addressHome"></span></div>
+      <div><label style="color:Cornsilk;">Editora: <span id="addressHome"></span></div>
       <br />
       <br />
-      <div>Valor do aluguel: <span id="rentalValue"></span></div>
+      <div><label style="color:Cornsilk;">Ano de Publicação: <span id="rentalValue"></span></div>
+      <br />
+      <br />
+      <div><label style="color:Cornsilk;">Edição: <span id="rentalValue"></span></div>
     </section>
 	   <script
       type="text/javascript"
