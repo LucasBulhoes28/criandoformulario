@@ -16,25 +16,27 @@
 	</style>
   <body>
     <header>
-      <h1 style="color:Cornsilk;">Contrato de locação de imóvel</h1>
+      <h1 style="color:Cornsilk;">Registro de Livros - Biblioteca PUC</h1>
     </header>
       <form action="#" target="_self" method="POST" name="frmImovel" id="frmImovel">
-        <label for="paramLocator"; style="color:Cornsilk;"><strong>Locador (end. ETH):<strong></label>
-        <input type="text" name="paramLocator" id="paramLocator" size="45" maxlength="42" required autofocus />
+        <label for="addTitulo"; style="color:Cornsilk;"><strong>Título:<strong></label>
+        <input type="text" name="addTitulo" id="addTitulo" size="30" maxlength="30" required autofocus placeholder="p. ex. Ensaio sobre a Cegueira" />
         <br />
         <br />
-        <label for="paramRenter"; style="color:Cornsilk;"><strong>Locatário (end. ETH):<strong></label>
-        <input type="text" name="paramRenter" id="paramRenter" size="45" maxlength="42" required />
+        <label for="addAutor"; style="color:Cornsilk;"><strong>Autor:<strong></label>
+        <input type="text" name="addAutor" id="addAutor" size="30" maxlength="30" required placeholder="p. ex. José Saramago" />
         <br />
         <br />
-        <label for="paramAddressHome"; style="color:Cornsilk;"><strong>Endereço do imóvel:<strong></label>
-        <input type="text" name="paramAddressHome" id="paramAddressHome" size="100" required placeholder="(informe a rua com o CEP do imóvel)" />
+        <label for="addEditora"; style="color:Cornsilk;"><strong>Editora:<strong></label>
+        <input type="text" name="addEditora" id="addEditora" size="30" required placeholder="p. ex. Cia. das Letras" />
         <br />
         <br />
-        <label for="paramRentalValue"; style="color:Cornsilk;"><strong>Valor do aluguel:<strong></label>
-        <input type="number" name="paramRentalValue" id="paramRentalValue" size="10" min="1" max="99999" required />
+        <label for="addAnoPublicacao"; style="color:Cornsilk;"><strong>Ano de Publicação:<strong></label>
+        <input type="number" name="addAnoPublicacao" id="addAnoPublicacao" size="10" min="1" max="9999" required placeholder="p. ex. 2008" />
         <br />
         <br />
+        <label for="addNumeroEdicao"; style="color:Cornsilk;"><strong>Edição:<strong></label>
+        <input type="number" name="addNumeroEdicao" id="addNumeroEdicao" size="10" min="1" max="9999" required placeholder="p. ex. 5ª" />
 	<div style="color:Cornsilk;">
         Observações:
         <input type="text" name="contractObsr" id="contractObs" size="100" min="1" max="99999" required placeholder="Opcional" />
