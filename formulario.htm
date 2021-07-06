@@ -37,6 +37,8 @@
         <br />
         <label for="addNumeroEdicao"; style="color:Cornsilk;"><strong>Edição:<strong></label>
         <input type="number" name="addNumeroEdicao" id="addNumeroEdicao" size="10" min="1" max="9999" required placeholder="p. ex. 5ª" />
+	<br />
+        <br />
 	<div style="color:Cornsilk;">
         Observações:
         <input type="text" name="contractObsr" id="contractObs" size="100" min="1" max="99999" required placeholder="Opcional" />
@@ -46,8 +48,23 @@
         <input type="submit" value="Registrar no Blockchain" onclick="obterDadosForm();" />
       </form>
     <hr />
-   <h5 style="color:Cornsilk;"><strong>Ao clicar no botão "registrar", você concorda com a nossa Política de Privacidade e com os nossos Termos de Uso do site<strong></h5>
-    <script
+     <h1>Dados do contrato de locação</h1>
+      </div>
+      <div>
+        <h2>Responsável técnico: <span id="spanOwner"></span></h2>
+      </div>
+      <div>
+        Informe o numero do contrato:
+        <input type="number" name="contractNumber" id="contractNumber" size="10" min="1" max="99999" />
+        <button onclick="getRentalContractData()">Buscar Dados</button>
+      </div>
+      <br />
+      <div>Endereço Ethereum do locador do imóvel: <span id="locator"></span></div>
+      <div>Endereço Ethereum do locatário do imóvel: <span id="renter"></span></div>
+      <div>Endereço físico do imóvel: <span id="addressHome"></span></div>
+      <div>Valor do aluguel: <span id="rentalValue"></span></div>
+    </section>
+	   <script
       type="text/javascript"
       integrity="sha384-dq8L5gpIcUoGAeHh/6setfxuuDI0ngshPvCvksSAcQMMWCr5cVFAaijT//nxVyjb"
       crossorigin="anonymous"
